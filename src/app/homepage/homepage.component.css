@@ -1,0 +1,43 @@
+.hero{
+    width: 100vw;
+    height: 90vh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+.heading{
+    position: absolute;
+    color: white;
+}
+
+.big{
+    font-size: 6rem;
+    top: 20%;
+}
+
+.small{
+    top: 40%;
+    font-size: 3rem;
+}
+
+.btn{
+    top: 60%;
+    font-size: 2rem;
+    border: 2px solid aqua;
+    color: aqua;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.btn:hover{
+    background-color: white;
+}

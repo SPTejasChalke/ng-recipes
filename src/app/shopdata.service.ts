@@ -17,7 +17,6 @@ export class ShopdataService {
     this.shopList = data;
   }
   updateList(id: string, name: string, quantity: number){
-    console.log(this.shopList);
     this.shopList.map((item)=>{
       if(item.id===id){
         item.name = name;
@@ -25,6 +24,5 @@ export class ShopdataService {
       }
       return item;
     });
-    console.log(this.shopList);
   }
 }

@@ -1,7 +1,4 @@
 .list-item{
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
     display: grid;
     width: 100%;
     height: fit-content;
@@ -11,6 +8,7 @@
     background-color: #e85858;
     color: white;
     border-radius: 8px;
+    margin: 0;
     margin-bottom: 10px;
     padding: 0 20px;
 }
@@ -55,11 +53,17 @@ input[type="number"]{
 i{
     font-size: 1.6rem;
     margin-left: 10px;
-    color: rgb(0, 203, 24);
+    color: rgb(0, 164, 19);
+}
+i:hover{
+    color: rgb(138, 248, 151);
 }
 
 i.edit{
     color: yellowgreen;
+}
+i.edit:hover{
+    color: white;
 }
 
 i.remove{

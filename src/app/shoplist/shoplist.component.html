@@ -2,6 +2,7 @@
   <div class="list-container">
     <div class="title">Shopping Cart</div>
     <div class="input-container">
+      <div class="message-display">Updated!</div>
       <div class="inputs">
         <label for="name">Name: </label>
         <input type="text" name="name" id="name" [(ngModel)]="name">
@@ -21,7 +22,7 @@
     </div>
     <div class="list">
       <div class="error" *ngIf="items.length <= 0">No items it the cart!</div>
-      <app-shop-list-item *ngFor="let item of items" [data]="item" (clickedData)="removeItem($event)"></app-shop-list-item>
+      <app-shop-list-item *ngFor="let item of items" [data]="item" (clickedData)="removeItem($event)" (showMessage)="showDisplayMessage()"></app-shop-list-item>
     </div>
   </div>
 </div>

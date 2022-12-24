@@ -1,9 +1,9 @@
 <div class="list-item">
     <div class="inputs">
-        <input type="text" class="name" value={{data.name}}>
+        <input type="text" class="name" value={{data.name}} [(ngModel)]="n1">
     </div>
     <div class="inputs">
-        <input type="number" class="quantity small" value={{data.quantity}}>
+        <input type="number" class="quantity small" value={{data.quantity}} [(ngModel)]="q1">
     </div>
     <div class="actions">
         <i class="fa-regular fa-pen-to-square edit" (click)="editItem(data.id)"></i>

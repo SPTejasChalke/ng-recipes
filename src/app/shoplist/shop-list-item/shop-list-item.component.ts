@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import { ShopdataService } from 'src/app/shopdata.service';
 
 interface dataStruct{
@@ -10,15 +10,26 @@ interface dataStruct{
   templateUrl: './shop-list-item.component.html',
   styleUrls: ['./shop-list-item.component.css', '../../../assets/font6/css/all.css']
 })
-export class ShopListItemComponent {
+export class ShopListItemComponent implements OnInit {
   @Input() data:dataStruct;
+
   @Output() clickedData = new EventEmitter<{name:string, quantity:number, opr:string}>();
+  @Output() showMessage = new EventEmitter<boolean>();
   hidden: boolean= true;
   inputName: string="";
   inputQuantity: number=0;
+  n1: string;
+  q1: number;
 
   constructor(private shopservice: ShopdataService){
     this.data = {name:'', quantity:0, id: ""};
+    this.n1 = this.data.name;
+    this.q1 = this.data.quantity;
+  }
+  
+  ngOnInit(): void {
+    this.n1 = this.data.name;
+    this.q1 = this.data.quantity;
   }
 
   increaseItem(): void{
@@ -34,9 +45,11 @@ export class ShopListItemComponent {
   }
 
   editItem(id: string): void{
-    this.inputName = (<HTMLInputElement>document.getElementsByClassName("name")[0]).value;
-    this.inputQuantity = parseInt((<HTMLInputElement>document.getElementsByClassName("quantity")[0]).value);
-    this.shopservice.updateList(id, this.inputName, this.inputQuantity);
+    // this.inputName = (<HTMLInputElement>document.getElementsByClassName("name")[0]).value;
+    // this.inputQuantity = parseInt((<HTMLInputElement>document.getElementsByClassName("quantity")[0]).value);
+    console.log(id);
+    this.shopservice.updateList(id, this.n1, this.q1);
+    this.showMessage.emit(true);
   }
 
 }

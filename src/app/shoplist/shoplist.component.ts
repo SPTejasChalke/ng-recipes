@@ -22,13 +22,24 @@ export class ShoplistComponent {
   constructor(private shopservie: ShopdataService){
     this.name = '';
     this.quantity = '';
-    this.items = [{name: "Item1", quantity: 3, id:nanoid()},{name: "Item2", quantity: 2, id:nanoid()}];
+    this.items = shopservie.shopList;
     this.hasChanged = false;
     this.total=0;
     this.items.map((item) => {
       this.total += item.quantity;
     })
-    this.shopservie.updateData(this.items);
+  }
+
+  showDisplayMessage(): void{
+    document.getElementsByClassName("message-display")[0].classList.add("active");
+    setTimeout(() => {
+      document.getElementsByClassName("message-display")[0].classList.remove("active");
+    }, 1000);
+    this.items = this.shopservie.shopList;
+    this.total = 0;
+    this.items.map((item) => {
+      this.total += item.quantity;
+    })
   }
 
   addToList(): void{
