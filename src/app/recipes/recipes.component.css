@@ -1,0 +1,33 @@
+.recipes-list{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    margin-left: 25px;
+    margin-right: auto;
+    font-size: 2.5rem;
+}
+
+.action-btn{
+    margin-right: 25px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.list-container{
+    width: 100vw;
+    padding: 0 5vw;
+    display: grid;
+    grid-template-columns: repeat(3, 30vw);
+    grid-auto-rows: 40vh;
+}

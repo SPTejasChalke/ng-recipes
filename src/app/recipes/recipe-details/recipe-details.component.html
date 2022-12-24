@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="display-title">
+        <div class="item-title">{{receievedData.name}}</div>
+        <div class="item-rating">
+            Rating: <span *ngFor="let item of temp">⭐</span>
+        </div>
+    </div>
+    <div class="display-image">
+        <img src={{receievedData.img}} alt="" srcset="">
+    </div>
+    <div class="display-text">
+        <div class="item-desc">{{receievedData.desc}}</div>
+        <div class="item-ingredients">
+            Ingredients: 
+            <div class="single-ingredient" *ngFor="let item of receievedData.ingredients">
+                {{item}}
+            </div>
+        </div>
+    </div>
+</div>

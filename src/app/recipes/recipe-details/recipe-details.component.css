@@ -1,0 +1,51 @@
+.container{
+    width: 100vw;
+    /* height: 80vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-title{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+
+.item-title{
+    font-size: 2.5rem;
+    margin-right: auto;
+}
+
+.display-image{
+    width: 40vw;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.display-text{
+    width: 90%;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.item-ingredients{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.single-ingredient{
+    margin-left: 10px;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+}

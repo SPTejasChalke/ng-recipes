@@ -1,0 +1,13 @@
+<div class="list-item">
+    <div class="item-img">
+        <img src={{listData.img}} alt="" srcset="">
+    </div>
+    <div class="item-display">
+        <div class="item-name">
+            {{listData.name}}
+        </div>
+        <div class="item-rating">
+            <span *ngFor="let item of temp">⭐</span>
+        </div>
+    </div>
+</div>

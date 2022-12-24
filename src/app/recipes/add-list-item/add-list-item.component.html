@@ -1,0 +1,29 @@
+<div class="input-form">
+    <div class="title">Add Recipe</div>
+    <div class="input-container">
+        <label for="name">Name: </label>
+        <input type="text" name="name" class="name">
+    </div>
+    <div class="input-container">
+        <label for="image">URL: </label>
+        <input type="text" name="image" class="image">
+    </div>
+    <div class="input-container area">
+        <label for="desc">Description: </label>
+        <textarea name="desc" class="desc" rows="4" cols="50"></textarea>
+    </div>
+    <div class="input-container small">
+        <div class="small-container">
+            <label for="rating">Rating: (1-5)</label>
+            <input type="number" name="rating" class="rating">
+        </div>
+        <div class="small-container long">
+            <label for="ingredients">Ingredients (comma seprated): </label>
+            <input type="text" name="ingredients" class="ingredients">
+        </div>
+    </div>
+    <div class="input-container btn">
+        <button (click)="onSubmit()">Submit</button>
+        <button>Clear</button>
+    </div>
+</div>

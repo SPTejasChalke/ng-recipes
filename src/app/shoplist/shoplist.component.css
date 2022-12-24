@@ -1,0 +1,113 @@
+.container{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.list-container{
+    height: 80vh;
+    width: 60vw;
+    border: 4px solid black;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.title{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: auto;
+    font-size: 2.5rem;
+    background-color: rgb(28, 28, 28);
+    color: white;
+}
+
+.input-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px 0;
+}
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.inputs > label{
+    margin: 0px 10px;
+    font-size: 1.3rem;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.inputs > input[type="text"]{
+    width: 35%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    padding: 5px 20px;
+    font-size: 1.5rem;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons > .btn{
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    border: 2px solid black;
+    background-color: rgb(28, 28, 28);
+    color: white;
+    -webkit-user-select: none;
+    user-select: none;
+    border-radius: 5px;
+}
+
+.list{
+    height: 80%;
+    width: 100%;
+    overflow-y: auto;
+    border-bottom: 2px solid white;
+    border-radius: 0 0 20px 20px;
+}
+
+.error{
+    width: 100%;
+    height: 40%;
+    font-size: 4rem;
+    color: rgb(171, 11, 11);
+    text-align: center;
+}
+
+.list-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-size: 2.3rem;
+    padding-bottom: 10px;
+}

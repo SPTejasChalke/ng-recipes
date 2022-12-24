@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="list-container">
+    <div class="title">Shopping Cart</div>
+    <div class="input-container">
+      <div class="inputs">
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name" [(ngModel)]="name">
+        <label for="quantity">Quantity: </label>
+        <input type="text" name="quantity" id="quantity" [(ngModel)]="quantity">
+      </div>
+      <div class="buttons">
+        <div class="btn" (click)="addToList()">Add</div>
+        <div class="btn" (click)="updateList()">Update</div>
+        <div class="btn" (click)="clearList()">Clear</div>
+      </div>
+    </div>
+    <div class="list-header">
+      <span>Name</span>
+      <span>Quantity({{total}})</span>
+      <span>Action</span>
+    </div>
+    <div class="list">
+      <div class="error" *ngIf="items.length <= 0">No items it the cart!</div>
+      <app-shop-list-item *ngFor="let item of items" [data]="item" (clickedData)="removeItem($event)"></app-shop-list-item>
+    </div>
+  </div>
+</div>
