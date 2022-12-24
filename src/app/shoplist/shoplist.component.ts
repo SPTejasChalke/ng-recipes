@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-import { Component, OnInit } from '@angular/core';
-
-=======
 import { Component } from '@angular/core';
 import { nanoid } from 'nanoid';
 import { ShopdataService } from '../shopdata.service';
@@ -9,21 +5,11 @@ import { ShopdataService } from '../shopdata.service';
 interface dataStruct{
   name:string, quantity:number, id:string;
 }
->>>>>>> 6702abc4accb971a31fdf6e972d632058b24e0d5
 @Component({
   selector: 'app-shoplist',
   templateUrl: './shoplist.component.html',
   styleUrls: ['./shoplist.component.css']
 })
-<<<<<<< HEAD
-export class ShoplistComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-=======
 
 export class ShoplistComponent {
   title = 'ng-shoplist';
@@ -141,5 +127,4 @@ export class ShoplistComponent {
   }
 
 
->>>>>>> 6702abc4accb971a31fdf6e972d632058b24e0d5
 }
