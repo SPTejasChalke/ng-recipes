@@ -50,7 +50,12 @@ export class AddListItemComponent {
 
     
     this.serviceData.addData({name: this.name, desc: this.desc, img: this.url, ingredients: ["i1", "i2"], rating: this.rating})
-    this.serviceData.logData();
+    this.onClear();
+
+    document.getElementsByClassName("display-success")[0].classList.add("active");
+    setTimeout(() => {
+      document.getElementsByClassName("display-success")[0].classList.remove("active");
+    }, 1000);
   }
 
   onClear(): void{

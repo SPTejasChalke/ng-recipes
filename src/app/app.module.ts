@@ -10,12 +10,13 @@ import { ReceipedataService } from './recipedata.service';
 import { RecipesComponent } from './recipes/recipes.component';
 import { HeadercompComponent } from './headercomp/headercomp.component';
 import { ShoplistComponent } from './shoplist/shoplist.component';
-import { ListItemComponent } from './list-item/list-item.component';
+import { ListItemComponent } from './recipes/list-item/list-item.component';
 import { AddListItemComponent } from './recipes/add-list-item/add-list-item.component';
 import { RecipeDetailsComponent } from './recipes/recipe-details/recipe-details.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ShopListItemComponent } from './shoplist/shop-list-item/shop-list-item.component';
 import { ShopdataService } from './shopdata.service';
+import { FeaturedItemComponent } from './recipes/featured-item/featured-item.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ShopdataService } from './shopdata.service';
     AddListItemComponent,
     RecipeDetailsComponent,
     HomepageComponent,
-    ShopListItemComponent
+    ShopListItemComponent,
+    FeaturedItemComponent
   ],
   imports: [
     BrowserModule,
