@@ -10,7 +10,7 @@ export class ReceipedataService {
         "name": "Chicken Kathi Rolls",
         "desc": "Kathi rolls have fast become the regular street food around the country, with a host of eateries and stalls selling a variety of this delicious, filling rolls. A single kathi roll can be had for lunch or dinner and you'll be full for long. This is an easy and quick recipe that you can try at home for brunch or a heavy evening meal. You can have it with your friends for a casual dinner at home.Chicken kathi roll has a delicious melange of chicken tikka and spices rolled together and served with a chutney.",
         "img": "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg",
-        "ingredients": ["i1", "i2"],
+        "ingredients": ["chicken", "onions", "lemons"],
         "rating": 4
       },
       {

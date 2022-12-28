@@ -111,6 +111,7 @@
     overflow-x: unset;
     border-bottom: 2px solid white;
     border-radius: 0 0 20px 20px;
+    background-color: white;
 }
 
 .error{

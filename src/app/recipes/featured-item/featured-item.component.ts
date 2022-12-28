@@ -7,13 +7,11 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class FeaturedItemComponent implements OnInit {
   @Input() listData:{name: string, desc: string, img: string, ingredients: string[], rating: number}= {name: "", desc: "", img: "", ingredients: [], rating: 0};
-  temp: number[] = [];
 
   constructor() {
 
   }
   
   ngOnInit(): void {
-    this.temp = Array(this.listData.rating).fill(0).map((x,i) => i);
   }
 }

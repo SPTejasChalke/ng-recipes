@@ -6,4 +6,5 @@
     box-sizing: border-box;
     font: inherit;
     font-family: 'Martian Mono','Chivo Mono', monospace;
+    user-select: none;
 }
